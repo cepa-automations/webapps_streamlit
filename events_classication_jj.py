@@ -1,6 +1,6 @@
 # app.py
 import streamlit as st
-
+import os
 #Substituir valores
 classication_incidentes  = {
   'Contact with Pedestrians or Bystanders': 'Collision with Cyclist / Motorcycle / Pedestrian',
@@ -75,7 +75,7 @@ classication_incidentes  = {
 
  }
 
-st.image(r'images\CEPA-MOBILITY_logo-principal_blanco (1).png', width=150)
+st.image('images/CEPA-MOBILITY_logo-principal_blanco (1).png', width=150)
 
 def find_key(input_value, classification_dict):
     for key, value in classification_dict.items():
